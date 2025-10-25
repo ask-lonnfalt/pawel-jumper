@@ -21,7 +21,7 @@ class Score:
 
     def update_current_score(self, height):
         if height // 500 > self.current_score:
-            self.current_score = height // 500
+            self.current_score = int(height // 500)
 
     def draw(self, window):
         text = GAME_FONT_BIG.render(
